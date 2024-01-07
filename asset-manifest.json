@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project-glimpse/static/css/main.2d330f83.css",
+    "main.js": "/project-glimpse/static/js/main.0d1ab8f6.js",
+    "index.html": "/project-glimpse/index.html",
+    "main.2d330f83.css.map": "/project-glimpse/static/css/main.2d330f83.css.map",
+    "main.0d1ab8f6.js.map": "/project-glimpse/static/js/main.0d1ab8f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d330f83.css",
+    "static/js/main.0d1ab8f6.js"
+  ]
+}
