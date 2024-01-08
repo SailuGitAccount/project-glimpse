@@ -9,7 +9,7 @@ const NavBar = () => {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           My Portfolio
         </Typography>
-        <Button component={RouterLink} to="#" color="inherit">
+        <Button component={RouterLink} to="/" color="inherit">
           Projects
         </Button>
       </Toolbar>
