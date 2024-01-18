@@ -1,12 +1,5 @@
-import {
-  Container,
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-  CardActionArea,
-} from "@mui/material";
-import { Link } from "react-router-dom";
+import ProjectCard from "./ProjectCard";
+import { Container, Typography, Grid } from "@mui/material";
 
 const ProjectsList = ({ projectsData }) => {
   return (
@@ -21,22 +14,7 @@ const ProjectsList = ({ projectsData }) => {
       <Grid container spacing={3} sx={{ marginTop: 2 }}>
         {projectsData.map((project) => (
           <Grid item key={project.id} xs={12} sm={6} md={4}>
-            <Link to={project.path} target="_blank" rel="noreferrer">
-              <Card>
-                <CardActionArea>
-                  <CardContent>
-                    <Typography gutterBottom variant="h6" component="div">
-                      {project.title}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      <b>Description:</b>
-                      <br />
-                      {project.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Link>
+            <ProjectCard project={project} />
           </Grid>
         ))}
       </Grid>
