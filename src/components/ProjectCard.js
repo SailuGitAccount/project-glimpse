@@ -2,10 +2,10 @@ import { Typography, Card, CardContent, CardActionArea } from "@mui/material";
 import { Link } from "react-router-dom";
 const ProjectCard = ({ project }) => {
   return (
-    <Link to={project.path} target="_blank" style={{ textDecoration: "none" }}>
-      <Card>
-        <CardActionArea>
-          <CardContent>
+    <Card>
+      <CardActionArea>
+        <CardContent>
+          <Link to={project.path} style={{ textDecoration: "none" }}>
             <Typography gutterBottom variant="h6" component="div">
               {project.title}
             </Typography>
@@ -14,10 +14,19 @@ const ProjectCard = ({ project }) => {
               <br />
               {project.description}
             </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    </Link>
+          </Link>
+          <Link
+            to={project.githubPath}
+            target="_blank"
+            style={{ textDecoration: "none", display: "block" }}
+          >
+            <Typography variant="body2" color="text.secondary">
+              <b>GitHub Link</b>
+            </Typography>
+          </Link>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 };
 
