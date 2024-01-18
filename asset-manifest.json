@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/project-glimpse/static/css/main.2d330f83.css",
-    "main.js": "/project-glimpse/static/js/main.a977ba8b.js",
+    "main.js": "/project-glimpse/static/js/main.816f4efa.js",
     "index.html": "/project-glimpse/index.html",
     "main.2d330f83.css.map": "/project-glimpse/static/css/main.2d330f83.css.map",
-    "main.a977ba8b.js.map": "/project-glimpse/static/js/main.a977ba8b.js.map"
+    "main.816f4efa.js.map": "/project-glimpse/static/js/main.816f4efa.js.map"
   },
   "entrypoints": [
     "static/css/main.2d330f83.css",
-    "static/js/main.a977ba8b.js"
+    "static/js/main.816f4efa.js"
   ]
 }
